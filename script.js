@@ -50,7 +50,7 @@ $(document).ready(function () {
     loop: true,
   });
   var typed = new Typed(".typing-2", {
-    strings: ["Lead Data Engineer | Product Manager"],
+    strings: ["Lead Data Engineer", "Product Manager"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
