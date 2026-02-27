@@ -1064,7 +1064,7 @@ nav ul {
 }
 
 .contact .contact-content .column {
-  width: calc(100% / 3.1);
+  width: calc(100% / 3.2);
   padding: 15px 5px;
   background: rgba(22, 33, 61, 0.6);
   border: 1px solid rgba(148, 163, 184, 0.2);
@@ -1296,7 +1296,7 @@ nav ul {
 @media (max-width: 760px) {
 
 
-  /* Hide the horizontal list and turn it into a mobile drawer */
+
   .navbar .menu {
     position: fixed;
     height: 100vh;
