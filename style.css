@@ -519,6 +519,8 @@ nav ul {
   font-size: 34px;
   margin: 14px 0 0;
   padding-bottom: 12px;
+  line-height: 1.2;
+  min-height: 100px;
 }
 
 .home .home-content .text-3 span {
