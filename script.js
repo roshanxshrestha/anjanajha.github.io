@@ -27,15 +27,8 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 3 seconds
 }
 
-var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-60px";
-  }
-  prevScrollpos = currentScrollPos;
+  document.getElementById("navbar").style.top = "0";
 };
 
 $(document).ready(function () {
@@ -46,21 +39,18 @@ $(document).ready(function () {
       $(".navbar").removeClass("sticky");
     }
   });
-  // toggle menu/navbar
-  $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
-  });
-
   // typing animation script
   var typed = new Typed(".typing", {
-    strings: ["Business Analyst", "Data Analyst"],
+    strings: [
+      "Cloud-Native Data Engineer & Product Strategist",
+      "Building Scalable, Regulated, Real-Time Data Platforms",
+    ],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
   var typed = new Typed(".typing-2", {
-    strings: ["Business Analyst", "Data Analyst"],
+    strings: ["Lead Data Engineer | Product Manager"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -90,8 +80,3 @@ $(document).ready(function () {
   AOS.init();
 });
 /*-----------------close nav when clicking on a  nav item------------*/
-document.addEventListener("click", function (e) {
-  if (e.target.closest(".menu")) {
-    toggleNav();
-  }
-});
