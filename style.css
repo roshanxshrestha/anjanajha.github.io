@@ -889,6 +889,7 @@ nav ul {
   padding: 1px;
   background: linear-gradient(140deg, rgba(45, 212, 191, 0.45), rgba(245, 158, 11, 0.2));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
@@ -1147,6 +1148,7 @@ nav ul {
 @media (max-width: 1085px) {
   .max-width {
     overflow: hidden;
+
   }
 
   .navbar .menu {
@@ -1231,7 +1233,7 @@ nav ul {
   }
 
   .services .serv-content .card {
-    width: calc(50% - 10px);
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -1289,20 +1291,24 @@ nav ul {
   .home .home-content .text-3 {
     font-size: 23px;
     margin-top: 10px;
-
+    line-height: 1;
+    min-height: 60px;
   }
 }
 
 @media (max-width: 760px) {
+  .home {
+    height: auto;
+    padding-top: 100px;
+  }
 
-
-
+  /* Hide the horizontal list and turn it into a mobile drawer */
   .navbar .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
     left: -100%;
-    /* Start hidden off-screen to the left */
+
     top: 0;
     text-align: center;
     background: #111;
@@ -1311,7 +1317,6 @@ nav ul {
     transition: all 0.3s ease;
   }
 
-  /* When the 'active' class is added via JS, slide the menu in */
   .navbar .menu.active {
     left: 0;
   }
@@ -1331,6 +1336,11 @@ nav ul {
   .max-width {
     overflow: hidden;
     padding: 0 23px;
+  }
+
+  .home {
+    height: auto;
+    padding-top: 100px;
   }
 
   .about .about-content .right .text {
