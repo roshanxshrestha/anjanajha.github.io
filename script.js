@@ -42,7 +42,7 @@ $(document).ready(function () {
   // typing animation script
   var typed = new Typed(".typing", {
     strings: [
-      "Cloud-Native Data Engineer & Product Strategist",
+      "Cloud-Native Data Engineer &amp; Product Strategist",
       "Building Scalable, Regulated, Real-Time Data Platforms",
     ],
     typeSpeed: 100,
@@ -80,3 +80,10 @@ $(document).ready(function () {
   AOS.init();
 });
 /*-----------------close nav when clicking on a  nav item------------*/
+window.addEventListener(
+  "hashchange",
+  function () {
+    window.history.replaceState(null, null, window.location.pathname);
+  },
+  false,
+);
