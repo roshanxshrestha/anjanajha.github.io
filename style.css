@@ -390,8 +390,9 @@ nav ul {
   position: relative;
   overflow: hidden;
   display: flex;
+  min-height: 100vh;
+  height: auto;
 
-  height: 100vh;
   color: whitesmoke;
   min-height: 500px;
   font-family: var(--body-font);
@@ -1300,6 +1301,7 @@ nav ul {
 
 @media (max-width: 760px) {
   .home {
+    min-height: 100vh;
     height: auto;
     padding-top: 100px;
   }
@@ -1341,7 +1343,7 @@ nav ul {
   }
 
   .home {
-    height: auto;
+    min-height: auto;
     padding-top: 100px;
   }
 
@@ -1383,15 +1385,7 @@ nav ul {
     padding: 20px 18px;
   }
 
-  .home .hero-main-photo {
-    max-width: 160px;
-    border-radius: 14px;
-  }
 
-  .home .hero-photo-strip img {
-    width: 48px;
-    height: 48px;
-  }
 }
 
 @media (max-width: 500px) {
