@@ -782,6 +782,7 @@ nav ul {
   font-weight: 600;
   margin-bottom: 10px;
   color: var(--main-color);
+  padding-top: 10px;
 }
 
 .skills .skills-content .left p {
